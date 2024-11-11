@@ -1,0 +1,100 @@
+/* Reset default margins, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the error content */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Content box styling */
+.error-content {
+    background-color: #ffffff; /* White background for content */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Heading styling */
+.error-heading {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #e74c3c; /* Red color for error */
+    margin-bottom: 20px;
+}
+
+/* Message styling */
+.error-message {
+    font-size: 16px;
+    color: #7f8c8d; /* Gray color for the message */
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.error-image img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.go-back-btn {
+    padding: 15px 30px;
+    background-color: #3498DB; /* Blue button */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.go-back-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .error-heading {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+
+    .go-back-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .error-image img {
+        max-width: 80%; /* Ensure image scales well on mobile */
+    }
+}
